@@ -83,7 +83,7 @@ h2 {
 
 .service p {
     margin: 0 auto;
-    width: 70%;
+    width: 200px;
 }
 
 blockquote {
@@ -91,6 +91,7 @@ blockquote {
     font-style: italic;
     font-weight: 300;
     margin-bottom: .5em;
+    text-align: left;
 }
 
 .cta h3 {
@@ -103,12 +104,14 @@ blockquote {
 
 span {
     color: var(--color-dark);
+    display: inline-block;
     font-weight: 700;
+    margin-right: 3.75em;
 }
 
 /************* Header Styles ************/
 .header {
-    padding: 2em 0;
+    padding: 4em 0;
 }
 
 .navbar {
@@ -138,7 +141,7 @@ nav {
 
 /************* What We Do Styles ************/
 .what-we-do {
-    padding: 2em 0;
+    padding: 4em 0;
 }
 
 .service:not(:last-child) {
@@ -150,18 +153,18 @@ nav {
     margin-bottom: .5em;
 }
 
-
 /************* Quote Styles ************/
 .quote {
     background-color: var(--color-medium);
-    padding: 2em 0;
+    padding: 4em 0;
+    text-align: right;
 }
 
 /************* CTA Styles ************/
 .cta {
     background-color: var(--primary-color);
     color: var(--color-light);
-    padding: 2em 0;
+    padding: 4em 0;
 }
 
 /************* Footer Styles ************/
@@ -170,10 +173,26 @@ nav {
 }
 
 /************* Media Queries ************/
-@media (min-width: 800px) {
+
+@media (min-width: 600px) {
     .container {
-        width: 70%;
+        width: 80%;
         max-width: 1000px;
+    }
+
+    .inner-container {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    /************* Header Styles ************/
+    .navbar {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .logo {
+        margin: 0;
     }
 
     nav {
@@ -182,4 +201,45 @@ nav {
         list-style: none;
         margin-left: auto;
     }
+
+    /************* Hero Styles ************/
+    .hero-text {
+        margin: 0 auto 2.5em;
+        width: 70%;
+    }
+
+    /************* What We Do Styles ************/
+    .what-we-do h2 {
+        margin-bottom: 2em;
+    }
+
+    .services {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 4em;
+    }   
+}
+
+@media (min-width: 900px) {
+
+    /************* What We Do Styles ************/
+    .services {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 0;
+    }
+    
+    /************* CTA Styles ************/
+    .cta-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .cta h3 {
+        margin-bottom: .5em;
+        text-align: left;
+    }    
 }

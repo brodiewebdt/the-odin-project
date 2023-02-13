@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
-</head>
-<body>
-    
-    <button id="btn">Get Results</button>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- <button id="btn">Get Results</button>
     <label for="selection">Enter you selection</label>
-    <input type="text" name="selection" id="p-selection">
-    <button id= btn-submit>Get Player Choice</button>
-
-    <h1>Rock Paper Scissors</h1>
+    <input type="text" name="selection" id="p-selection" />
+    <button id="btn-submit">Get Player Choice</button> -->
+      <div class="container">
+        <h1>Rock Paper Scissors</h1>
     <h2 id="final-score"></h2>
 
     <h2>Computer Choice: <span id="computer-choice"></span></h2>
@@ -22,10 +28,15 @@
     <h2>Player Score: <span id="player-score"></span></h2>
     <h2>Computer Score: <span id="computer-score"></span></h2>
 
-    <button id="rock">rock</button>
-    <button id="paper">paper</button>
-    <button id="scissors">scissors</button>
+    <button class="button" id="rock">Rock</button>
+    <button class="button" id="paper">Paper</button>
+    <button class="button" id="scissors">Scissors</button>
+    <!-- <button class="button" id="lizard">Lizard</button>
+    <button class="button" id="spock">Spock</button> -->
+      </div><!-- /.container -->
+    
 
-    <script src="js/script.js"></script>
-</body>
+    <!-- <script src="js/script.js"></script> -->
+    <script src="js/button.js"></script>
+  </body>
 </html>

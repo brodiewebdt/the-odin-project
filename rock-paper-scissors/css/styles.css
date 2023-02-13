@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  // text-align: center;
+  outline: 1px solid magenta;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2#final-score {
+  text-align: center;
+}
+
+.button {
+  background-color: rgb(8, 8, 94);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1.25rem;
+  padding: 0.5em 1.5rem;
+}

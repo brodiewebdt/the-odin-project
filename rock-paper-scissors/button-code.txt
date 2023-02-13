@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .button {
+        padding: 10px 20px;
+        margin: 10px;
+        border-radius: 5px;
+        background-color: #4CAF50;
+        color: white;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button class="button" id="button1">Button 1</button>
+      <button class="button" id="button2">Button 2</button>
+      <button class="button" id="button3">Button 3</button>
+      <button class="button" id="button4">Button 4</button>
+      <button class="button" id="button5">Button 5</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
+JavaScript:
+
+javascript
+
+const buttons = document.querySelectorAll('.button');
+let clickedButtonValue = '';
+
+buttons.forEach(button => {
+  button.addEventListener('click', event => {
+    clickedButtonValue = event.target.textContent;
+    console.log(clickedButtonValue + ' was clicked');
+  });
+});
+
+In the HTML code, we create a container div with 5 buttons, each with a unique ID. In the JavaScript code, we use querySelectorAll to select all elements with a class of .button. We then loop through each button and add an event listener to it using addEventListener. The event listener listens for a click event and logs the value of the clicked button to the console.
+
+You can store the value of the clicked button for later use in the program by using a global variable (in this case clickedButtonValue) and updating its value in the event listener.
